@@ -22,5 +22,3 @@
                     maiores, eligendi magni reiciendis dignissimos ullam cum animi praesentium eius? Nihil, hic. Fugiat
                     dolore dolores veritatis!</p>
             </div>
-
-        </div>

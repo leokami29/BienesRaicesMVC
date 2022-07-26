@@ -34,12 +34,13 @@ if (!isset($inicio)) {
                     <img src="/build/img/barras.svg" alt="icono menu rensposive">
                 </div>
                 <div class="derecha">
-                    <img class="Darkmode__btn" src="/build/img/dark-mode.svg" alt="">
-                    <nav class="navegacion">
-                        <a href="/nosotros">NOSOTROS</a>
-                        <a href="/propiedades">ANUNCIO</a>
-                        <a href="/blog">BLOG</a>
-                        <a href="/contacto">CONTACTOS</a>
+
+                    <nav class="navegacion" data-cy="navegacion-header">
+                        <a href="/nosotros">Nosotros</a>
+                        <a href="/propiedades">Propiedades</a>
+                        <a href="/blog">Blog</a>
+                        <a href="/contacto">Contacto</a>
+                        <img class="Darkmode__btn" src="/build/img/dark-mode.svg" alt="">
                         <?php if ($auth) : ?>
                             <a href="/admin">Admin</a>
                             <a href="/logout">Cerrar Sesion</a>
@@ -49,7 +50,7 @@ if (!isset($inicio)) {
             </div><!-- Cierre de la barra -->
             <?php
             if ($inicio) {
-                echo "<H1>Venta de Casas y Departamentos Exclusivos de Lujo</H1>";
+                echo "<h1 data-cy='heading-sitio'>Venta de Casas y Departamentos Exclusivos de Lujo</h1>";
             }
             ?>
 
@@ -61,17 +62,18 @@ if (!isset($inicio)) {
 
     <footer class="footer seccion">
         <div class="contenedor contenido__footer">
-            <nav class="navegacion">
-                <a href="/nosotros">NOSOTROS</a>
-                <a href="/propiedades">ANUNCIO</a>
-                <a href="/blog">BLOG</a>
-                <a href="/contacto">CONTACTOS</a>
+            <nav class="navegacion" data-cy="navegacion-footer">
+                <a href="/nosotros">Nosotros</a>
+                <a href="/propiedades">Propiedades</a>
+                <a href="/blog">Blog</a>
+                <a href="/contacto">Contacto</a>
+                
             </nav>
         </div>
 
 
 
-        <p class="copyright">Todos los derechos Reservados <?php echo date('Y'); ?> &copy; <br> Leonel Polanco</p>
+        <p class="copyright" data-cy="copyright">Todos los derechos Reservados <?php echo date('Y'); ?> &copy; <br> Leonel Polanco</p>
 
     </footer>
 

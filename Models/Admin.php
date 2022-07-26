@@ -20,7 +20,7 @@ class Admin extends ActiveRecord {
 
     public function validar() {
         if(!$this->email){
-            self::$errores[] = 'El Email es obligatorio';
+            self::$errores[] ='El Email es obligatorio';
         }
     
         if(!$this->password){

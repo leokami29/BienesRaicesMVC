@@ -1,10 +1,10 @@
 <main class="contenedor seccion">
-    <H1>Mas Sobre Nosotros</H1>
-    <div class="iconos__nosotros">
+    <h2 data-cy="heading-nosotros">Mas Sobre Nosotros</h2>
+    <div class="iconos__nosotros" data-cy="icono-nosotros">
 
     <?php 
             include 'iconos.php';
-        ?>
+     ?>
 
     </div>
 </main>
@@ -18,18 +18,18 @@
         ?>
 
     <div class="alinear__derecha">
-        <a href="/propiedades" class="boton__verde">Ver Todas</a>
+        <a href="/propiedades" class="boton__verde" data-cy="todas-propiedades">Ver Todas</a>
     </div>
 </section>
 
-<section class="imagen__contacto">
+<section class="imagen__contacto" data-cy="iamgen-contacto">
     <h2>Encuentra la casa de tus sueños</h2>
     <p>¡Llena el formulario de contacto y un asesor se pondrá en contacto contigo en un momento!</p>
     <a href="/contacto" class="boton__amarillo">Contáctanos</a>
 </section>
 
 <div class="contenedor seccion seccion__inferior">
-    <section class="blog">
+    <section class="blog" data-cy="Blog">
         <h3>Nuestro Blog</h3>
 
         <article class="entrada__blog">
@@ -74,7 +74,7 @@
             </div>
         </article>
     </section>
-    <section class="testimoniales">
+    <section class="testimoniales" data-cy="Testimoniales">
         <h3>Testimoniales</h3>
         <div class="testimonial">
             <blockquote cite="">
